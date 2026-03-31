@@ -7,8 +7,8 @@ export default function App() {
       <AppSidebar />
       <main className="flex flex-col flex-1 p-4">
         <SidebarTrigger />
-        <h1 className="text-2xl font-bold mt-4">Hello from App!</h1>
-        <p className="text-muted-foreground mt-2">Your sidebar is now working.</p>
+        <h1 className="text-2xl font-bold mt-4">Hello!</h1>
+        <p className="text-muted-foreground mt-2">Welcome to my website!</p>
       </main>
     </SidebarProvider>
   )

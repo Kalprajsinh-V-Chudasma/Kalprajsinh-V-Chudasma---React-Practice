@@ -10,12 +10,16 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
-import { Home, Info, Settings } from "lucide-react"
+import { Book, Contact, Home, Info, LogIn, Settings, User } from "lucide-react"
 
 const navItems = [
-  { title: "Home", icon: Home, url: "#" },
-  { title: "About", icon: Info, url: "#" },
-  { title: "Settings", icon: Settings, url: "#" },
+  { title: "Home", icon: Home, url: "/" },
+  { title: "About", icon: Info, url: "/" },
+  { title: "Settings", icon: Settings, url: "/" },
+  { title: "Contact us", icon: Contact, url: "/" },
+  { title: "Portfolio", icon: Book, url: "/" },
+  { title: "About Me", icon: User, url: "/" },
+  { title: "Login", icon: LogIn, url: "/" }
 ]
 
 export function AppSidebar() {
@@ -42,7 +46,7 @@ export function AppSidebar() {
         </SidebarGroup>
       </SidebarContent>
       <SidebarFooter>
-        <div className="px-4 py-3 text-xs text-muted-foreground">© 2026 My App</div>
+        <div className="px-4 py-3 text-xs text-muted-foreground">My App</div>
       </SidebarFooter>
     </Sidebar>
   )
