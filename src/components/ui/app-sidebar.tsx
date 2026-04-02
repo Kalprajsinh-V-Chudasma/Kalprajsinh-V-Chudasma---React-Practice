@@ -10,11 +10,12 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar"
+import { Link } from "react-router-dom"
 import { Book, Contact, Home, Info, LogIn, Settings, User } from "lucide-react"
 
 const navItems = [
   { title: "Home", icon: Home, url: "/" },
-  { title: "About", icon: Info, url: "/" },
+  { title: "About", icon: Info, url: "/about" },
   { title: "Settings", icon: Settings, url: "/" },
   { title: "Contact us", icon: Contact, url: "/" },
   { title: "Portfolio", icon: Book, url: "/" },
@@ -35,7 +36,7 @@ export function AppSidebar() {
             <SidebarMenu>
               {navItems.map((item) => (
                 <SidebarMenuItem key={item.title}>
-                  <SidebarMenuButton render={<a href={item.url} />}>
+                  <SidebarMenuButton render={<Link to={item.url} />}>
                     <item.icon />
                     <span>{item.title}</span>
                   </SidebarMenuButton>
