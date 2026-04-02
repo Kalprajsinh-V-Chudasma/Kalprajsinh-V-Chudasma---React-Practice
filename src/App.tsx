@@ -3,6 +3,9 @@ import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
 import { AppSidebar } from "@/components/ui/app-sidebar"
 import About from "@/Pages/About"
 import Portfolio from "@/Pages/portfolio"
+import ContactUs from "@/Pages/contactUs"
+import AboutMe from "@/Pages/aboutMe"
+import Settings from "@/Pages/settings"
 
 function Home() {
   return (
@@ -24,6 +27,9 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/contact-us" element={<ContactUs />} />
+            <Route path="/about-me" element={<AboutMe />} />
+            <Route path="/settings" element={<Settings />} />
           </Routes>
         </main>
       </SidebarProvider>

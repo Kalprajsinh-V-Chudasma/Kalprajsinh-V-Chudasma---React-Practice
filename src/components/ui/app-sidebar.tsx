@@ -16,10 +16,10 @@ import { Book, Contact, Home, Info, LogIn, Settings, User } from "lucide-react"
 const navItems = [
   { title: "Home", icon: Home, url: "/" },
   { title: "About", icon: Info, url: "/about" },
-  { title: "Settings", icon: Settings, url: "/" },
-  { title: "Contact us", icon: Contact, url: "/" },
+  { title: "Settings", icon: Settings, url: "/settings" },
+  { title: "Contact us", icon: Contact, url: "/contact-us" },
   { title: "Portfolio", icon: Book, url: "/portfolio" },
-  { title: "About Me", icon: User, url: "/" },
+  { title: "About Me", icon: User, url: "/about-me" },
   { title: "Login", icon: LogIn, url: "/" }
 ]
 
